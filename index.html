@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Madhura Foods</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Madhura Foods Logo">
+            <span>Madhura Foods</span>
+        </div>
+
+        <ul>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/signin">Login</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <h1>Taste Like Home ❤️</h1>
+
+        <p>
+            Fresh • Healthy • Homemade Food • Ready For Takeaway
+        </p>
+
+        <a href="/register">
+            <button class="hero-btn">
+                Create Your Account
+            </button>
+        </a>
+
+        <p class="tagline">
+            The Taste You Will Remember ✨
+        </p>
+
+    </section>
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+        <div class="card">
+            <h2>🍱 Homemade</h2>
+            <p>Prepared with love and care.</p>
+        </div>
+
+        <div class="card">
+            <h2>🚶 Take Away</h2>
+            <p>Ready for takeaway.</p>
+        </div>
+
+        <div class="card">
+            <h2>🥗 Healthy</h2>
+            <p>Fresh ingredients every day.</p>
+        </div>
+
+        <div class="card">
+            <h2>💰 Affordable</h2>
+            <p>Quality food at fair prices.</p>
+        </div>
+
+    </section>
+
+    <!-- FOOD CATEGORIES -->
+
+    <section class="foods">
+
+        <h2>Popular Categories</h2>
+
+        <div class="food-grid">
+
+            <div class="food-card">
+                <h3>🍛 Meals</h3>
+            </div>
+
+            <div class="food-card">
+                <h3>🥣 Soups</h3>
+            </div>
+
+            <div class="food-card">
+                <h3>🍪 Snacks</h3>
+            </div>
+
+            <div class="food-card">
+                <h3>✨ Personalised</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>Madhura Foods</h3>
+
+        <p>Homemade Food • Healthy Food • Takeaway</p>
+
+        <p>📞 9544455840 📧 madhurafoodies@gmail.com</p>
+        <p>YT Channel: <a href="https://www.youtube.com/@MadhuraFoodies" target="_blank">Madhura Foodies</a>
+             Instagram: <a href="https://www.instagram.com/madhura_foods" target="_blank">madhurafoodies</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>

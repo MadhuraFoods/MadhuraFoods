@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Menu - Madhura Foods</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}">
+
+<style>
+
+.menu-container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.menu-title{
+    text-align:center;
+    color:#ff6b00;
+    margin-bottom:40px;
+}
+
+.category-title{
+    color:#ff6b00;
+    margin:40px 0 20px;
+    font-size:32px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.menu-item{
+    background:white;
+    border-radius:15px;
+    padding:15px;
+    display:flex;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.menu-item img{
+    width:80px;
+    height:80px;
+    border-radius:12px;
+    object-fit:cover;
+}
+
+.menu-info{
+    flex:1;
+    margin-left:15px;
+}
+
+.menu-info h3{
+    margin:0;
+    color:#333;
+}
+
+.price{
+    font-size:22px;
+    font-weight:bold;
+    color:#ff6b00;
+}
+
+@media(max-width:900px){
+    .menu-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        <img src="{{ url_for('static', filename='logo.png') }}">
+        <span>Madhura Foods</span>
+    </div>
+
+    <ul>
+        <li><a href="/profile">Home</a></li>
+        <li><a href="/menu" class="active">Menu</a></li>
+        <li><a href="/orders">Orders</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+
+</nav>
+
+<div class="menu-container">
+
+<h1 class="menu-title">🍱 Our Menu</h1>
+
+<!-- MAIN COURSE -->
+
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Veg Meals</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Non-Veg Meals</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Chicken Biryani</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Mutton Biryani</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Biryani Rice</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Kabab + Biryani</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Curd Rice</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Mint Rice</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Lemon Rice</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Tamarind Rice</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Potato Rice</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Tomato Rice</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Coconut Rice</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Carrot Rice</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Curry Leaf Rice</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Beetroot Rice</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Idly</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Sambar Idly</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Mini Idly</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Podi Idly</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Plain Dosa</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Egg Dosa</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Podi Masala Dosa</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Set Dosa</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+
+<!-- SIDE DISHES -->
+
+<h2 class="category-title">🍲 Side Dishes</h2>
+
+<!-- MENU ITEM TEMPLATE -->
+
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+
+
+<!-- SNACKS -->
+
+<h2 class="category-title">🍪 Snacks</h2>
+
+<!-- MENU ITEM TEMPLATE -->
+
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+<br>
+<div class="menu-item">
+    <img src="{{ url_for('static', filename='coming-soon.png') }}">
+    <div class="menu-info"><h3>Appam</h3></div>
+    <div class="price">₹---</div>
+</div>
+
+</div>
+
+</body>
+</html>
